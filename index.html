@@ -4,93 +4,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <img src="/assets/imagen.jpg" alt="">
-        <h1>Freddy Ramón</h1>
-        <p>Desarrollador de Python| Html |Css | github</p>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#inicio" class="active">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mi</a></li>
+            <li><a href="#habilidades">habilidades</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <header id="inicio">
+        <img src="/assets/imagendemi.png" alt="">
+        <h1>Freddy Jair Ramon Rojas</h1>
+        <p>Desarrollador de Software</p>
     </header>
 
-    <section class="section">
+    <section id="sobre-mi" class="section">
+        <div class="sobre-mi">
+            <h2>Sobre mi</h2>
+            <p>Joven profesional del software en construcción con una sólida 
+                base analítica en matemáticas y ciencias de la computación. 
+                Formado en tecnologías Backend y Frontend (Java, Spring Boot, 
+                Python, JavaScript). Busco aplicar mis habilidades técnicas y 
+                mi capacidad de trabajo colaborativo para el desarrollo de 
+                soluciones funcionales y optimizadas, con enfoque en el 
+                aprendizaje rápido y la resolución de problemas.
+            </p>
+        </div><br><br>
+    </section>
+    <section id="habilidades" class="section">
         <h2>Habilidades Técnicas</h2>
         <div class="skills-grid">
             <div class="skill">
-                <div class="skill-icon">🔷</div>
+                <div class="skill-icon"><i class="devicon-python-plain colored"></i></div>
                 <h3>Python</h3>
-                <p>Desarrollo de software , la ciencia de datos y el machine learning (ML)</p>
+                <p>Desarrollo Backend, automatización de procesos, análisis de datos y creación de aplicaciones robustas.</p>
             </div>
 
             <div class="skill">
-                <div class="skill-icon">🟧</div>
-                <h3>Html</h3>
-                <p> estructura básica de una página web</p>
+                <div class="skill-icon"><i class="devicon-html5-plain colored"></i></div>
+                <h3>HTML</h3>
+                <p>Construcción de estructuras web semánticas, accesibles y optimizadas para interfaces modernas.</p>
             </div>
 
             <div class="skill">
-                <div class="skill-icon">🟦</div>
-                <h3>Css</h3>
-                <p>presentación visual de documentos HTML o XML, como páginas web</p>
+                <div class="skill-icon"><i class="devicon-css3-plain colored"></i></div>
+                <h3>CSS</h3>
+                <p>Diseño visual responsivo, animaciones, Grid/Flexbox y creación de experiencias atractivas.</p>
             </div>
 
             <div class="skill">
-                <div class="skill-icon">⬛</div>
-                <h3>Github</h3>
-                <p>sistema de control de versiones, para alojar y administrar proyectos de software</p>
+                <div class="skill-icon"><i class="devicon-java-plain colored"></i></div>
+                <h3>Java</h3>
+                <p>Aplicaciones orientadas a objetos, lógica backend segura y desarrollo empresarial.</p>
             </div>
+
+            <div class="skill">
+                <div class="skill-icon"><i class="devicon-mysql-plain colored"></i></div>
+                <h3>MySQL</h3>
+                <p>Diseño y gestión de bases de datos, consultas eficientes y modelado relacional.</p>
+            </div>
+
+            <div class="skill">
+                <div class="skill-icon"><i class="devicon-github-original"></i></div>
+                <h3>GitHub</h3>
+                <p>Control de versiones, manejo de ramas, colaboración y flujos de desarrollo eficientes.</p>
+            </div>
+
         </div>
     </section>
     
-    <section class="section">
+    <section id="proyectos" class="section">
     <h2>Proyectos</h2>
     <div class="projects">
             <div class="project">
-                <img src="https://i.pinimg.com/736x/ed/6d/df/ed6ddf5504e7dbf3f8f11eec12f35da3.jpg" alt="Proyecto Taskboard">
+                <img src="./assets/Proyecto1.png" alt="Proyecto Taskboard">
                 <div class="project-description">
-                    <h3>Taskboard APP</h3>
-                    <p>Gestión de tareas con autenticación, dark mode y panel admin</p>
+                    <h3>Proyecto Ser</h3>
+                    <p>Proyecto SER es una aplicación web educativa enfocada en que 
+                        niños y jóvenes aprendan sus deberes y derechos mediante 
+                        actividades interactivas. Incluye un sistema de tarjetas 
+                        arrastrables y una interfaz diseñada para funcionar en móviles 
+                        con soporte táctil. Fue desarrollado con HTML, CSS y JavaScript, 
+                        priorizando accesibilidad, diseño atractivo y facilidad de uso. 
+                        El proyecto está orientado al aprendizaje dinámico y a la 
+                        educación emocional.</p>
+                        <div class="project-buttons">
+                            <a href="https://github.com/FreddyR03/Proyecto_SER" target="_blank" class="btn">Ver en GitHub</a>
+                        </div>
                 </div>
             </div>
 
         
             <div class="project">
-                <img src="https://i.pinimg.com/736x/1b/23/f3/1b23f3617efa19aeebd6081917831d85.jpg" alt="Proyecto Dashboard">
+                <img src="./assets/proyecto2.png" alt="Proyecto Dashboard">
                 <div class="project-description">
-                    <h3>Dashboard APP</h3>
-                    <p>Panel de análisis, estadisticas y filtros, responsive y CSS puro</p>
+                    <h3>Rapid Express</h3>
+                    <p>Proyecto SER es una aplicación web educativa enfocada en que niños 
+                        y jóvenes aprendan sus deberes y derechos mediante actividades 
+                        interactivas. Incluye un sistema de tarjetas arrastrables y una 
+                        interfaz diseñada para funcionar en móviles con soporte táctil. 
+                        Fue desarrollado con HTML, CSS y JavaScript, priorizando accesibilidad, 
+                        diseño atractivo y facilidad de uso. El proyecto está orientado al 
+                        aprendizaje dinámico y a la educación emocional.</p>
+                        <div class="project-buttons">
+                            <a href="https://github.com/JhoanS5/rapidexpress-management-system" target="_blank" class="btn">Ver en GitHub</a>
+                        </div>
                 </div>
             </div>
     </div>
 
-    <section class="section">
+    <section  id="experiencia" class="section">
         <h2>Experiencia</h2>
         <div class="timeline">
             <div class="exp">
-                <h3>Senior Developer - TechCorp</h3>
-                <p>2022-Actualidad <br> DeVOps, escalabilidad, APis, Arquitectura Backend</p>
+                <h3>Desarrollador de Software</h3>
+                <p>2025-Actualidad <br> DevOps, escalabilidad, APIs, Arquitectura Backend</p>
             </div>
             <div class="exp">
-                <h3>Fronted Dev - UXify</h3>
-                <p>2020-2022 <br> UX, animaciones,sistemas de diseño</p>
-            </div>
-            <div class="exp">
-                <h3>Trainee - CodeCamp</h3>
-                <p>2019-2020 <br> JS, Mongo, Express y practicas CI/CD</p>
+                <h3>Tecnico en Sistemas</h3>
+                <p>2022-2024 <br> Programacion, topologia y manejo de tecnologias</p>
             </div>
         </div>
     </section>
 
-    <footer>
+    <footer id="contacto">
         &#169 Freddy - Todos los derechos reservados <br>
         <div class="socials">
-            <a href="#" target="_blank"><img src="/assets/social/facebook.png" alt="Facebook"></a>
-            <a href="#" target="_blank"><img src="/assets/social/github.png" alt="Github"></a>
-            <a href="#" target="_blank"><img src="/assets/social/gmail.png" alt="Gmail"></a>
-            <a href="#" target="_blank"><img src="/assets/social/instagram.png" alt="Instagram"></a>
-            <a href="#" target="_blank"><img src="/assets/social/linkedin.png" alt="linkedin"></a>
-            <a href="#" target="_blank"><img src="/assets/social/ws.png" alt="Whatsaap"></a>
+            <a href="https://www.facebook.com/freddyj.rojas.5" target="_blank"><img src="/assets/social/facebook.png" alt="Facebook"></a>
+            <a href="https://github.com/FreddyR03" target="_blank"><img src="/assets/social/github.png" alt="Github"></a>
+            <a href="mailto:freddy030307@gmail.com" target="_blank"><img src="/assets/social/gmail.png" alt="Gmail"></a>
+            <a href="https://www.instagram.com/fred_dy135" target="_blank"><img src="/assets/social/instagram.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/freddy-jair-ramón-rojas-545240375" target="_blank"><img src="/assets/social/linkedin.png" alt="linkedin"></a>
+            <a href="https://wa.me/3042602099" target="_blank"><img src="/assets/social/ws.png" alt="Whatsaap"></a>
         </div>
     </footer>
+    <script src="./script.js"></script>
 </body>
 </html>
